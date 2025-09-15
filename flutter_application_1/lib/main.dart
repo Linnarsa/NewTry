@@ -11,18 +11,52 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
      return MaterialApp(
       home: Scaffold(
-        body: SingleChildScrollView( 
-          child: Column(
-            children: [
-              Image.network('https://habrastorage.org/getpro/habr/upload_files/347/bc4/240/347bc424029e258318de6c8ab17c9052.png'),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {},
-                child: Text('Нажми меня'),
-              ),
-            ],
-          ),
-        ),
+        body: Column(
+          children: [
+            Container(
+              color: Colors.blueGrey,
+              child: Center (
+                child: Text ("ААААААААААААААААААААААААААААААА")
+              )
+            ),
+            Container( 
+            height: 450,
+            width: 600,
+            child: 
+              Column(
+              children: [
+                Image.network('https://avatars.mds.yandex.net/i?id=6d309c8c314fd74ce0173975aa7e5461_l-5331535-images-thumbs&n=13',
+                height: 150,
+                width: 400,),
+                SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Нажми меня'),
+                ),
+              ],
+            ),
+            ),
+            Container(
+              child:Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CircleAvatar(backgroundColor: Colors.pink,),
+                  CircleAvatar(backgroundColor: Colors.pink,),
+                  CircleAvatar(backgroundColor: Colors.pink,),
+                  CircleAvatar(backgroundColor: Colors.pink,),
+                  CircleAvatar(backgroundColor: Colors.pink,),
+                  CircleAvatar(backgroundColor: Colors.pink,),
+                ],
+              )
+            ),
+            Container(
+              color: Colors.blueGrey,
+              child: Center (
+                child: Text ("FOOTER!!!!!")
+              )
+            ),
+         ]
+        )
       ),
     );  
   }
