@@ -14,6 +14,8 @@ class MainApp extends StatelessWidget {
         body: Column(
           children: [
             Container(
+              margin: EdgeInsets.all(12),
+              padding: const EdgeInsets.all(20),
               color: Colors.blueGrey,
               child: Center (
                 child: Text ("ААААААААААААААААААААААААААААААА")
@@ -22,6 +24,8 @@ class MainApp extends StatelessWidget {
             Container( 
             height: 450,
             width: 600,
+            margin: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(5),
             child: 
               Column(
               children: [
@@ -51,8 +55,10 @@ class MainApp extends StatelessWidget {
             ),
             Container(
               color: Colors.blueGrey,
+              padding: const EdgeInsets.all(20),
+              margin:EdgeInsets.all(5),
               child: Center (
-                child: Text ("FOOTER!!!!!")
+                child: Text ("FOOTER!!!!")
               )
             ),
          ]
