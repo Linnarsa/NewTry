@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 //import 'package:lab2/second_screen.dart';
+import 'package:go_router/go_router.dart';
 
 class MainScreen extends StatelessWidget {
   @override
@@ -9,7 +10,7 @@ class MainScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
         onPressed: () {
-          Navigator.pushNamed(context, '/second');
+          context.push('/second');
         },
         child: Text('Go to Second Screen'),
       ),
